@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Self-driving car - No libraries</title>
+</head>
+<body> 
+    <button id="mute" onclick="muteSound()" style="position:absolute;top: 40vh;left:30px">
+        mute
+    </button>
+    <button id="pause" onclick="pauseGame()"style="position:absolute;top: 45vh;left:30px">
+        pause
+    </button>
+    <div style="position:absolute;top:30vh;left:30px;flex-direction: row;display: flex;justify-content: center;align-items: center;">
+    <h1>
+        Scoure
+    </h1>
+    <p id="scoure" style="text-align: center;margin-left:30px;font-size: larger;">
+        0
+    </p>
+</div>
+<div style="position:absolute;top:20vh;left:30px;flex-direction: row;display: flex;justify-content: center;align-items: center;">
+    <h1>
+       High Scoure
+    </h1>
+    <p id="high_scoure" style="text-align: center;margin-left:30px;font-size: larger;">
+        0
+    </p>
+</div>
+<button id="restart" onclick="restart()" style="position:absolute;top: 50vh;left:30px">
+    restart
+</button>
+    <canvas id="myCanvas"></canvas>
+    <script src="sensors.js"></script>
+    <script src="utils.js"></script>
+    <script src="roads.js"></script>
+    <script src="controls.js"></script> 
+    <script src="car.js"></script> 
+    <script src="main.js"></script>
+</body>
+</html>
